@@ -1,40 +1,44 @@
 package Encapculation;
+import java.util.*;
 
-	class employee{
-		private String empName;
-		private int empId;
-		private int empSalary;
+
+public class ShadoingProblem {
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		Employee1 e1 = new Employee1();
+		System.out.println("Enter the Name :");
+		String name = sc.nextLine();
+		System.out.println("Enter the Id :");
+		int id = sc.nextInt();
+		System.out.println("Enter the Salary :");;
+		int salary = sc.nextInt();
 		
-		public Employee(String empName, int empId, int empSalary) {
-			this.empName = empName;
-			this.empId = empId;
-			this.empSalary = empSalary;
-		}
-		
-		public String getName() {
-			return empName;
-		}
-		public int getId() {
-			return empId;
-		}
-		public int getSalary() {
-			return empSalary;
-		}
-		
+		e1.setData(name, id, salary);
+		System.out.println("Name : " +e1.getName());
+		System.out.println("Id : " + e1.getId());
+		System.out.println("Salary :" +e1.getSalary());
 		
 	}
 
-	public class ShadoingProblem {
+}
 
-		public static void main(String[] args) {
-			Employee e = new Employee("abc", 101, 10000);
-			System.out.println(e.getName());
-			System.out.println(e.getId());
-			System.out.println(e.getSalary());
-
-		}
-
+class Employee1{
+	private String name;
+	private int Id;
+	private int salary;
+	
+	public void setData(String name, int Id, int salary) {
+		this.name = name;
+		this.Id = Id;
+		this.salary = salary;
 	}
-
-
+	public String getName() {
+		return name;
+	}
+	public int getId() {
+		return Id;
+	}
+	public int getSalary() {
+		return salary;
+	}
 }
