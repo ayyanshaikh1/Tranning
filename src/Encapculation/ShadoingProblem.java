@@ -28,6 +28,7 @@ class Employee1{
 	private int salary;
 	
 	public void setData(String name, int Id, int salary) {
+//		Shadoing using this keyword to the local variable
 		this.name = name;
 		this.Id = Id;
 		this.salary = salary;
