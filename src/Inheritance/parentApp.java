@@ -3,7 +3,7 @@ package Inheritance;
 public class parentApp {
 
 	public static void main(String[] args) {
-		child c = new child();
+		Child1 c = new Child1();
 		System.out.println(c.a);
 		System.out.println("In the Child class");
 		c.disp();
@@ -21,6 +21,8 @@ class parent{
 	}
 	
 }
-class child extends parent{
+class Child1 extends parent{
 	
 }
+
+
