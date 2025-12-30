@@ -29,6 +29,7 @@ class player1{
 			}
 	}
      public class player {
+    	 public 
 		FootBall b = new FootBall("Abc",24,"Male",30,20);
 		b.getGoals();
 		
