@@ -1,11 +1,10 @@
 package Inheritance;
 
-
 class player1{
 	String name;
 	int age;
 	String gender;
-	
+}
 	//Constructor
 	class FootBall extends player1{
 		int goals;
@@ -27,13 +26,13 @@ class player1{
 			public String getName() {
 				return name;
 			}
-	}
+	
      public class player {
-    	 public 
+    	 public static void main() {
 		FootBall b = new FootBall("Abc",24,"Male",30,20);
 		b.getGoals();
 		
-		
+    	 }
 
 	}
 
